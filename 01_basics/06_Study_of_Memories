@@ -1,0 +1,30 @@
+// Two types of memories : Stack(Primitive),   Heap(Non-Primitive)
+
+// STACK: Whenever stack memory is used, it means u get a "copy of a variable u have declared".
+
+// HEAP: Whenever a memory is defined inside a heap or any object goes inside heap, then we get original reference. Any changes made will be reflected in original one.
+
+
+let myYoutubename = "nirmalcodedotcom"
+
+let anothername = myYoutubename
+anothername = "nirmalaurcode"               // yaha par copy mai change hua hai naa ki original mai
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+let userOne = {
+    email:"nirmal@gmail.com",
+    upi:"nirmalll@oksbi"
+}
+
+
+let userTwo =  userOne
+
+userTwo.upi = "nirmaltopwal@oksbi"     // yaha par original mai change hua hai.. because dono ka reference same tha(original)
+
+
+console.log(userOne)
+console.log(userTwo);
+
